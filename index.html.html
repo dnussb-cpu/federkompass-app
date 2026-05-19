@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Federkompass Daily</title>
+    <style>
+        body { font-family: 'Segoe UI', sans-serif; background-color: #f7f3e9; margin: 0; padding: 0; color: #333; }
+        header { background-color: #001a33; color: white; padding: 20px; text-align: center; }
+        nav { background-color: #000d1a; display: flex; justify-content: space-around; padding: 10px 0; }
+        nav a { color: #d1d1d1; text-decoration: none; font-size: 11px; font-weight: bold; text-transform: uppercase; }
+        .container { padding: 15px; }
+        .card { background-color: white; border-radius: 12px; overflow: hidden; margin-bottom: 15px; border: 1px solid #001a33; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+        .card-header { background-color: #001a33; color: white; padding: 10px 15px; display: flex; justify-content: space-between; }
+        .card-content { padding: 20px; text-align: center; }
+        .counter-row { display: flex; justify-content: center; align-items: center; gap: 20px; margin: 10px 0; }
+        .btn-round { background-color: #001a33; color: white; border: none; width: 45px; height: 45px; border-radius: 50%; font-size: 24px; }
+        .egg-count { font-size: 36px; font-weight: bold; color: #001a33; }
+        .badge { display: inline-block; padding: 5px 15px; border-radius: 20px; font-size: 12px; font-weight: bold; margin-top: 10px; }
+        .badge-red { background-color: #ffdada; color: #8b0000; }
+        .badge-yellow { background-color: #fff4cc; color: #997300; }
+        .badge-blue { background-color: #e0eaff; color: #001a33; }
+        .fab { position: fixed; bottom: 20px; right: 20px; background-color: #001a33; color: white; width: 60px; height: 60px; border-radius: 50%; display: flex; justify-content: center; align-items: center; font-size: 30px; text-decoration: none; box-shadow: 0 4px 10px rgba(0,0,0,0.3); }
+    </style>
+</head>
+<body>
+    <header>
+        <div style="font-size: 22px; font-weight: bold;">Federkompass Daily</div>
+        <div style="font-size: 12px; opacity: 0.8;">Stall-Manager</div>
+    </header>
+    <nav>
+        <a href="#">Heute</a>
+        <a href="#">Export</a>
+        <a href="#">Statistik</a>
+        <a href="#">Bestand</a>
+    </nav>
+    <div class="container">
+        <div class="card">
+            <div class="card-header"><span>Henne "Berta"</span></div>
+            <div class="card-content">
+                <div style="font-size: 14px; color: #666;">Eier heute</div>
+                <div class="counter-row">
+                    <button class="btn-round">-</button>
+                    <span class="egg-count">0</span>
+                    <button class="btn-round">+</button>
+                </div>
+                <div class="badge badge-red">Krank: Milbenverdacht!</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header"><span>Gruppe 1: Legehybriden</span></div>
+            <div class="card-content">
+                <div style="font-size: 14px; color: #666;">Eier heute</div>
+                <div class="counter-row">
+                    <button class="btn-round">-</button>
+                    <span class="egg-count">8</span>
+                    <button class="btn-round">+</button>
+                </div>
+                <div class="badge badge-blue">Normal</div>
+            </div>
+        </div>
+    </div>
+    <a href="#" class="fab">+</a>
+</body>
+</html>
